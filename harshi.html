@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harshi's Pizza</title>
+   <link rel="stylesheet" href="./style.css">
+  
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <h1>Harshi's Pizza</h1>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#offers">Offers</a></li>
+      <li><a href="#">Track Order</a></li>
+      <li><a href="#">Order History</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-text">
+
+      <h2>
+        Unlimited Pizza 🍕
+      </h2>
+
+      <p>
+        Pizza, Burger, Momos & Combo Meals only ₹99
+      </p>
+
+      <button>
+        Order Now
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- MENU -->
+
+  <section class="menu" id="menu">
+
+    <h2>Our Menu</h2>
+
+    <div class="cards">
+<!-- PIZZA CARD -->
+<div class="card" onclick="showPizza()">
+  <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591">
+  <h3>Pizza</h3>
+</div>
+
+<!-- BURGER CARD -->
+<div class="card" onclick="showBurger()">
+  <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+  <h3>Burger</h3>
+</div>
+
+<!-- MOMOS CARD -->
+<div class="card" onclick="showMomos()">
+  <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f">
+  <h3>Momos</h3>
+</div>
+
+<!-- FRIES CARD -->
+<div class="card" onclick="showFries()">
+  <img src="https://images.unsplash.com/photo-1576107232684-1279f390859f">
+  <h3>Fries</h3>
+</div>
+
+<!-- DRINK CARD -->
+<div class="card" onclick="showDrinks()">
+  <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699">
+  <h3>Cold Drinks</h3>
+</div>
+
+
+
+<!-- PIZZA OPTIONS -->
+
+<div id="pizzaItems" class="food-list">
+
+  <div class="food-box">
+    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591">
+    <h2>Cheese Pizza</h2>
+    <p>₹39</p>
+  </div>
+
+  <div class="food-box">
+    <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65">
+    <h2>Paneer Pizza</h2>
+    <p>₹49</p>
+  </div>
+
+  <div class="food-box">
+    <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143">
+    <h2>Farmhouse Pizza</h2>
+    <p>₹79</p>
+  </div>
+
+  <div class="food-box">
+    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+    <h2>Veg Loaded Pizza</h2>
+    <p>₹99</p>
+  </div>
+
+</div>
+
+
+
+<!-- BURGER OPTIONS -->
+
+<div id="burgerItems" class="food-list">
+
+  <div class="food-box">
+    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+    <h2>Veg Burger</h2>
+    <p>₹49</p>
+  </div>
+
+  <div class="food-box">
+    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+    <h2>Cheese Burger</h2>
+    <p>₹79</p>
+  </div>
+
+  <div class="food-box">
+    <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90">
+    <h2>Paneer Burger</h2>
+    <p>₹99</p>
+  </div>
+
+</div>
+
+
+
+<!-- MOMOS OPTIONS -->
+
+<div id="momosItems" class="food-list">
+
+  <div class="food-box">
+    <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f">
+    <h2>Veg Momos</h2>
+    <p>₹39</p>
+  </div>
+
+  <div class="food-box">
+    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19">
+    <h2>Cheese Momos</h2>
+    <p>₹69</p>
+  </div>
+
+</div>
+
+
+
+<!-- FRIES OPTIONS -->
+
+<div id="friesItems" class="food-list">
+
+  <div class="food-box">
+    <img src="https://images.unsplash.com/photo-1576107232684-1279f390859f">
+    <h2>Salted Fries</h2>
+    <p>₹49</p>
+  </div>
+
+  <div class="food-box">
+    <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d">
+    <h2>Cheese Fries</h2>
+    <p>₹89</p>
+  </div>
+
+</div>
+
+
+
+<!-- DRINK OPTIONS -->
+
+<div id="drinkItems" class="food-list">
+
+  <div class="food-box">
+    <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699">
+    <h2>Cold Coffee</h2>
+    <p>₹59</p>
+  </div>
+
+  <div class="food-box">
+    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e">
+    <h2>Chocolate Shake</h2>
+    <p>₹99</p>
+  </div>
+
+</div>
+
+
+
+
+
+ <script src="./script.js"></script>
+     
+
+  </section>
+
+  <!-- PIZZA -->
+
+  <section class="food-slider">
+
+    <h2>Unlimited Pizza Menu 🍕</h2>
+
+    <div class="slider-items">
+
+      <div class="food-box">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591">
+        <h3>Cheese Pizza</h3>
+        <p>₹39</p>
+      </div>
+
+      <div class="food-box">
+        <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65">
+        <h3>Farmhouse Pizza</h3>
+        <p>₹49</p>
+      </div>
+
+      <div class="food-box">
+        <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143">
+        <h3>Paneer Pizza</h3>
+        <p>₹79</p>
+      </div>
+
+      <div class="food-box">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+        <h3>Mexican Pizza</h3>
+        <p>₹99</p>
+      </div>
+
+      <div class="food-box">
+        <img src="https://images.unsplash.com/photo-1548365328-9f547fb0953b">
+        <h3>Cheese Burst</h3>
+        <p>₹149</p>
+      </div>
+
+      <div class="food-box">
+        <img src="https://images.unsplash.com/photo-1511689660979-10d2b1aada49">
+        <h3>Veg Loaded Pizza</h3>
+        <p>₹199</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- BURGER -->
+
+  <section class="food-slider">
+
+    <h2>Veg Burger Menu 🍔</h2>
+
+    <div class="slider-items">
+
+      <div class="food-box">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+        <h3>Aloo Burger</h3>
+        <p>₹49</p>
+      </div>
+
+      <div class="food-box">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+        <h3>Veg Cheese Burger</h3>
+        <p>₹79</p>
+      </div>
+
+      <div class="food-box">
+        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90">
+        <h3>Paneer Burger</h3>
+        <p>₹99</p>
+      </div>
+
+      <div class="food-box">
+        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add">
+        <h3>Double Veg Burger</h3>
+        <p>₹149</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- OFFERS -->
+
+  <section class="offers" id="offers">
+
+    <h2>🔥 Combo Offers 🔥</h2>
+
+    <div class="offer-box">
+      <h3>₹99 Combo</h3>
+      <p>Pizza + Fries + Cold Drink</p>
+    </div>
+
+    <div class="offer-box">
+      <h3>₹199 Combo</h3>
+      <p>2 Pizza + Burger + Coke</p>
+    </div>
+
+    <div class="offer-box">
+      <h3>₹299 Family Combo</h3>
+      <p>Unlimited Pizza + Fries + Drinks</p>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <h2>Harshi's Pizza</h2>
+
+    <p>Fast Delivery • Fresh Food • Best Taste</p>
+
+    <p>📞 Contact: 7877446935</p>
+    <p>Developed by - Rohit broka
+    </p>
+
+  </footer>
+
+</body>
+</html>
